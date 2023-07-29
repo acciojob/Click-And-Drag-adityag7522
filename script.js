@@ -24,7 +24,7 @@
     if (!isMouseDown) return;
     e.preventDefault();
     const x = e.clientX;
-    const walk = (x - startX) * 3; // Adjust the scrolling speed by changing the multiplier
+    const walk = (x - startX); // Adjust the scrolling speed by changing the multiplier
 
     items.scrollLeft = scrollLeft - walk;
   });
